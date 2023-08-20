@@ -31,10 +31,18 @@ function Leftconta() {
                 <p><MdCall style={iconStyle} />946759....</p>
             </div>
             <div className="icons">
-                <a href="#"><BsFacebook style={socialIcon2} /></a>
-                <a href='#'> <BsTwitter style={socialIcon} /> </a>
-                <a href='#'> <FiInstagram style={socialIcon} /></a>
-                <a href='#'> <BsLinkedin style={socialIcon} /></a>
+                <div className="fb">
+                    <a href="#"><BsFacebook style={socialIcon2} /></a>
+                </div>
+                <div className="twi">
+                    <a href='#'> <BsTwitter style={socialIcon} /> </a>
+                </div>
+                <div className="ins">
+                    <a href='#'> <FiInstagram style={socialIcon} /></a>
+                </div>
+                <div className="linkdin">
+                    <a href='#'> <BsLinkedin style={socialIcon} /></a>
+                </div>
             </div>
             <div className="cv-down">
                 <button>Download CV</button>

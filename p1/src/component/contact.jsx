@@ -4,7 +4,7 @@ import Rightcontact from './rightcontact'
 
 function Contact() {
     return (
-        <div className='contact'>
+        <div id='contact'>
             <Leftconta />
             <Rightcontact />
         </div>

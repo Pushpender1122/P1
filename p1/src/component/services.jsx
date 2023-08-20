@@ -3,7 +3,7 @@ import { FaCode, FaCropAlt } from 'react-icons/fa'
 import { SiAppstore } from 'react-icons/si'
 function Services() {
     return (
-        <div className='service'>
+        <div id='service'>
             <h1>My Services</h1>
             <div className="my-service-text">
                 <div className='box'>

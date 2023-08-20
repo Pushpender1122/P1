@@ -8,6 +8,10 @@ body {
     color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -24,12 +28,21 @@ ol {
     margin-right: 2.438rem;
 }
 
+/* 
+ol:hover {
+    text-decoration: underline crimson;
+} */
+
 .navbar-text {
     display: flex;
     color: #FFF;
     font-family: Inter;
     align-items: center;
 
+}
+
+.button-hide {
+    display: none;
 }
 
 .logo-text {
@@ -81,7 +94,7 @@ ol {
 }
 
 /* -------------------about me-------- */
-.about {
+#about {
     display: flex;
     /* margin: 3rem 0 0 0rem; */
     padding-top: 5rem;
@@ -167,15 +180,19 @@ ol {
     display: none;
 }
 
+.show-Element {
+    display: inline-block;
+}
+
 /* --------------------service-------------- */
-.service {
+#service {
     height: 100vh;
     box-sizing: border-box;
     margin: 10rem 5rem 0 5rem;
 
 }
 
-.service h1 {
+#service h1 {
     font-size: 3rem;
 }
 
@@ -212,20 +229,19 @@ ol {
 }
 
 /* -----------------work------------ */
-.work {
+#work {
     box-sizing: border-box;
     margin: 0rem 5rem 0 5rem;
     height: 100vh;
-
 }
 
-.work h1 {
+#work h1 {
     font-size: 3rem;
 }
 
 .work-pro {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     margin-top: 3rem;
 
 }
@@ -334,7 +350,7 @@ ol {
 }
 
 /* -------------------contact--------------- */
-.contact {
+#contact {
     box-sizing: border-box;
     height: 72vh;
     margin: 5rem 5rem 0 5rem;
@@ -342,7 +358,7 @@ ol {
     justify-content: space-between;
 }
 
-.contact h1 {
+#contact h1 {
     font-size: 3rem;
 }
 
@@ -373,8 +389,9 @@ ol {
     border: 0;
     border-radius: 5px;
     /* border: 1.5px solid #6f1933; */
-
+    cursor: pointer;
 }
+
 
 /* ------------rightcontact--- */
 /* .rightcontact {
@@ -409,6 +426,20 @@ textarea {
     cursor: pointer;
 }
 
+.icons {
+    display: flex;
+}
+
+.fb:hover,
+.twi:hover,
+.ins:hover,
+.linkdin:hover {
+    position: relative;
+    transition: background 0.5s, tranform 0.5s;
+    transform: translateY(-5px);
+}
+
+
 /* ---------footer------------ */
 .footer {
     display: flex;
@@ -418,4 +449,137 @@ textarea {
     background-color: #262626;
     height: 30px;
 
+}
+
+@media only screen and (max-width:600px) {
+    .navbar {
+        display: flex;
+        margin-left: 2rem;
+    }
+
+    .show-Element {
+        background-color: #e12861;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 35vw;
+        font-size: 2rem;
+        padding: 20px;
+    }
+
+    .show-Element ol li {
+        margin-top: 1.5rem;
+    }
+
+    .navbar-text {
+        display: none;
+    }
+
+    .button-hide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    /* //content navbar */
+    .content1-Text {
+        height: 82vh;
+        width: 100vw;
+        background-image: url('../images/primary-img.png');
+        background-repeat: no-repeat;
+        background-position-y: 20vh;
+        /* position: relative; */
+        /* top: 20vh; */
+    }
+
+    .text p {
+        font-size: 1rem;
+        color: #cec9c9;
+        font-weight: 400;
+    }
+
+    .text div {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .text {
+        /* border: 2px solid white; */
+        margin-left: 5%;
+        width: 60vw;
+        position: absolute;
+        bottom: 32%;
+    }
+
+    .content1-Text {
+        display: inline-block;
+    }
+
+    .primary-img {
+        display: none;
+
+    }
+
+    /* about */
+    #about {
+        display: inline-block;
+    }
+
+    .second-img {
+        height: 50vh;
+        width: 90vw;
+        /* border: 2px solid white; */
+        background-size: cover;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* .service */
+    #service {
+        margin: 10rem 5rem 30rem 5rem;
+
+    }
+
+    /* work */
+    #work {
+        margin: 0rem 2rem 0 2rem;
+    }
+
+    .box-size {
+        width: 86vw;
+        margin-bottom: 2rem;
+    }
+
+    /* contact */
+    #contact {
+        margin: 70rem 5rem 0 5rem;
+        display: inline-block;
+    }
+
+    .cv-down button {
+        width: 37vw;
+    }
+
+    .rightcontact button {
+        width: 37vw;
+    }
+
+    .btn button {
+        width: 45vw;
+
+    }
+
+    /* form */
+    form {
+        margin-top: 1rem;
+    }
+
+    /* footer */
+    .footer {
+        margin-top: 3rem;
+
+    }
 }

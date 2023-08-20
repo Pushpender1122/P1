@@ -4,6 +4,7 @@ import './navbar.css'
 function Firstcontent() {
     return (
         <div className='content1-Text'>
+
             <div className='text'>
                 <p>UI/UX Designer</p>
                 <div>

@@ -9,7 +9,7 @@ function About() {
         setContent(value);
     }
     return (
-        <div className='about'>
+        <div id='about'>
             <div className="second-img">
                 {/* <img src={img} width={'300px'} alt="My-img" /> */}
             </div>

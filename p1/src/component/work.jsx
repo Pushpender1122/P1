@@ -10,7 +10,7 @@ function Work() {
         // borderRadius: '50%',
     }
     return (
-        <div className='work'>
+        <div id='work'>
             <h1>My work</h1>
             <div className="work-pro">
                 <div className="pro1 box-size">
