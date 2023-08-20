@@ -23,6 +23,11 @@ a {
     color: white;
 }
 
+a:hover {
+    border-bottom: 3px solid #ff004f;
+    margin-top: 10px;
+}
+
 ol {
     list-style-type: none;
     margin-right: 2.438rem;
@@ -439,9 +444,14 @@ textarea {
     transform: translateY(-5px);
 }
 
+.msg {
+    margin-top: 1rem;
+    color: #ff004f;
+}
 
 /* ---------footer------------ */
 .footer {
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     text-align: center;

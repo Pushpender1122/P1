@@ -35,7 +35,7 @@ function Navbar() {
                 </div>
                 <div className={displayClass}>
                     <FaTimes style={{ fontSize: '2rem', cursor: "pointer" }} onClick={handleClass} className="button-hide" />
-                    <ol><li><a href="#" onClick={handleLinkClick}>Home</a></li></ol>
+                    <ol><li><a href="#" onClick={handleLinkClick} className='active'>Home</a></li></ol>
                     <ol><li><a href="#about" onClick={handleLinkClick}>About</a></li></ol>
                     <ol><li><a href="#service" onClick={handleLinkClick}>Services</a></li></ol>
                     <ol><li><a href="#work" onClick={handleLinkClick}>Portfolio</a></li></ol>
